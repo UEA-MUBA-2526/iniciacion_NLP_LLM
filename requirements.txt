@@ -35,3 +35,5 @@ httpx
 requests
 aiohttp
 pyyaml
+session_info
+tensorflow
