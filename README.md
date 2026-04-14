@@ -46,7 +46,9 @@ Avanzado (11-12)
 
 ### Configuración del Entorno Virtual
 
-Se recomienda usar Python 3.12+ para este curso. Puedes gestionar las dependencias usando **pip** (con `requirements.txt`) o **Poetry** (con `pyproject.toml`). Elige el método que prefieras:
+Se recomienda usar Python 3.12+ para este curso. Puedes gestionar las dependencias usando **pip** (con `requirements.txt`) o **Poetry** (con `pyproject.toml`). Elige el método que prefieras.
+
+Si prefieres no instalar Python ni paquetes en el sistema, puedes usar **Docker con JupyterLab** (Python 3.13 y dependencias del curso ya instaladas); las instrucciones están al final de este README, en **Entorno con Docker (JupyterLab)**.
 
 ---
 
@@ -391,3 +393,101 @@ Curso creado por Francisco Espiga Fernández
 ## Licencia
 
 Material educativo para uso no comercial.
+
+---
+
+## Entorno con Docker (JupyterLab)
+
+Si tienes problemas instalando Python o las dependencias en tu ordenador, puedes usar **Docker**: el contenedor incluye **Python 3.13**, **JupyterLab** y las librerías del curso (`requirements.txt`). Al arrancar el contenedor debes **montar la carpeta del repositorio** en `/workspace` para que Jupyter vea tus notebooks y puedas **guardar cambios en disco** (lectura y escritura).
+
+En la raíz del repositorio hay un `Dockerfile` para construir la imagen. El profesorado puede publicar la misma imagen en Docker Hub para que los estudiantes solo tengan que hacer `docker pull` y `docker run`.
+
+**Nombre de imagen de ejemplo en Docker Hub** (sustituye si el curso usa otro):
+
+`franespiga/iniciacion-nlp-llm:jupyter`
+
+### Instalación de Docker en macOS
+
+1. Descarga e instala **[Docker Desktop para Mac](https://docs.docker.com/desktop/setup/install/mac-install/)** desde la documentación oficial de Docker.
+2. Abre **Docker Desktop** y espera a que el estado indique que el motor está en ejecución.
+3. Abre **Terminal** y comprueba la instalación:
+
+```bash
+docker --version
+```
+
+### Instalación de Docker en Windows
+
+1. Descarga e instala **[Docker Desktop para Windows](https://docs.docker.com/desktop/setup/install/windows-install/)** desde la documentación oficial de Docker.
+2. Si el instalador lo pide, activa el subsistema **WSL 2** y reinicia cuando se indique.
+3. Abre **Docker Desktop** y espera a que esté listo.
+4. Abre **PowerShell** o **Símbolo del sistema** y comprueba:
+
+```cmd
+docker --version
+```
+
+### Descargar la imagen desde Docker Hub
+
+Desde una terminal, en cualquier carpeta:
+
+```bash
+docker pull franespiga/iniciacion-nlp-llm:jupyter
+```
+
+*(Si la imagen aún no está publicada, usa la sección siguiente para construirla en local.)*
+
+### Construir la imagen en local (alternativa)
+
+Clona el repositorio y entra en la carpeta raíz del proyecto (donde está el `Dockerfile`):
+
+```bash
+docker build -t iniciacion-nlp-llm:jupyter .
+```
+
+**Profesorado (publicar en Docker Hub):** inicia sesión con `docker login`, etiqueta la imagen con el nombre del repositorio remoto (por ejemplo `docker tag iniciacion-nlp-llm:jupyter franespiga/iniciacion-nlp-llm:jupyter`) y súbela con `docker push franespiga/iniciacion-nlp-llm:jupyter`. La primera construcción puede tardar bastante por PyTorch, TensorFlow y el resto de dependencias.
+
+### Arrancar el contenedor y montar tu carpeta del curso
+
+Debes ejecutar estos comandos **desde la raíz del repositorio** clonado (donde están `notebook/`, `requirements.txt`, etc.), para que el volumen monte todo el proyecto.
+
+**macOS / Linux (bash o zsh):**
+
+```bash
+cd /ruta/al/iniciacion_NLP_LLM
+docker run --rm -it -p 8888:8888 -v "$(pwd):/workspace" franespiga/iniciacion-nlp-llm:jupyter
+```
+
+Si construiste la imagen localmente con el nombre `iniciacion-nlp-llm:jupyter`, usa ese mismo nombre al final del comando en lugar de `franespiga/iniciacion-nlp-llm:jupyter`.
+
+**Windows (PowerShell):**
+
+```powershell
+cd C:\ruta\al\iniciacion_NLP_LLM
+docker run --rm -it -p 8888:8888 -v "${PWD}:/workspace" franespiga/iniciacion-nlp-llm:jupyter
+```
+
+**Windows (Símbolo del sistema, cmd.exe):**
+
+```cmd
+cd C:\ruta\al\iniciacion_NLP_LLM
+docker run --rm -it -p 8888:8888 -v "%cd%:/workspace" franespiga/iniciacion-nlp-llm:jupyter
+```
+
+- **`-p 8888:8888`**: JupyterLab queda accesible en el puerto 8888 de tu máquina.
+- **`-v "...:/workspace"`**: tu carpeta del proyecto se monta en `/workspace` dentro del contenedor con permisos de lectura y escritura; los cambios en notebooks se guardan en tu disco.
+- **`--rm`**: el contenedor se elimina al cerrarlo (la imagen se conserva).
+
+### Abrir JupyterLab en el navegador
+
+Cuando el contenedor esté en marcha, abre:
+
+[http://localhost:8888/lab](http://localhost:8888/lab)
+
+La imagen está configurada **sin contraseña ni token** para facilitar el uso en local. **No expongas el puerto 8888 a Internet** ni uses esta configuración en servidores públicos.
+
+### Notas adicionales
+
+- **Ordenadores Apple Silicon (M1/M2/M3):** si la imagen de Docker Hub solo está construida para `linux/amd64`, Docker puede emularla; si ves errores o lentitud extrema, pide una imagen multi-arquitectura o construye la imagen en tu Mac con `docker build`.
+- **Modelos descargados** (Hugging Face, embeddings, etc.) suelen escribirse en cachés dentro del proyecto o en tu home; al usar solo el volumen del repo, lo que quede fuera de esa carpeta no se persistirá al borrar el contenedor. Si un notebook guarda fuera de `/workspace`, monta rutas extra con `-v` o ajusta las rutas en el código.
+- Para **detener** Jupyter, en la terminal del contenedor pulsa `Ctrl+C` o cierra la ventana; con `--rm` el contenedor desaparece pero tus archivos siguen en la carpeta del host.
