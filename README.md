@@ -236,6 +236,8 @@ python -m ipykernel install --user --name iniciacion_nlp_llm --display-name "Pyt
 poetry run python -m ipykernel install --user --name iniciacion_nlp_llm --display-name "Python (NLP/LLM Course)"
 ```
 
+DespuÃ©s, selecciona en Jupyter o VS Code/Cursor el kernel `Python (NLP/LLM Course)` para ejecutar los notebooks con el entorno del proyecto. Si necesitas instalar paquetes desde una celda, usa `%pip install ...` en lugar de `!pip install ...` para que la instalaciÃ³n ocurra en el mismo kernel activo.
+
 ### Instalar CLIP para el Notebook 12
 
 Para el notebook de modelos multimodales:
