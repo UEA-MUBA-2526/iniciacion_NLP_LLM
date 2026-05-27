@@ -1,0 +1,6 @@
+.virtual_documents/ 
+anaconda_projects/ 
+__pycache__/ 
+.ipynb_checkpoints/ 
+notebook/faiss_index/ 
+notebook/modelo_local/ 
