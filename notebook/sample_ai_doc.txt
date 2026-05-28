@@ -1,0 +1,15 @@
+Introducción a la Inteligencia Artificial
+
+La inteligencia artificial (IA) es una rama de la informática que busca crear 
+sistemas capaces de realizar tareas que normalmente requieren inteligencia humana.
+
+Tipos de IA:
+1. IA Débil (Narrow AI): Diseñada para tareas específicas
+2. IA Fuerte (General AI): Capaz de cualquier tarea intelectual humana
+3. Superinteligencia: Hipotética IA que supera la inteligencia humana
+
+Aplicaciones comunes:
+- Reconocimiento de voz
+- Visión por computadora
+- Procesamiento de lenguaje natural
+- Sistemas de recomendación

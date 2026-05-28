@@ -7,7 +7,7 @@ name = "iniciacion-nlp-llm"
 version = "0.1.0"
 description = "Curso de LLMs y Aplicaciones de IA"
 readme = "README.md"
-requires-python =  ">=3.12,<3.15"
+requires-python =  ">=3.11,<3.15"
 license = {text = "MIT"}
 authors = [
     {name = "Francisco Espiga", email = "francisco.espiga.fernandez@gmail.com"}
