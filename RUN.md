@@ -1,23 +1,29 @@
-# Instrucciones de Ejecución Rápida (Demo Mínima)
+# Instrucciones de Ejecución Rápida, Calidad y Limitaciones (RUN.md)
 
-## 1. Qué notebook ejecutar primero
-Para comenzar con el proyecto y entender el flujo inicial de la asignatura, se debe ejecutar primero el notebook:
-`notebook/00_Introducción_a_NLP_con_HuggingFace.ipynb`
+## 1. Orden Recomendado de Ejecución
+Para entender el flujo completo del proyecto y la evolución de los modelos, se debe seguir estrictamente este orden:
+1. `notebook/00_Introducción_a_NLP_con_HuggingFace.ipynb` (Fundamentos y Pipelines básicos)
+2. `notebook/02_Embeddings_Transformers.ipynb` (Generación de embeddings y búsqueda semántica)
+3. `notebook/07_Reranking_Optimizacion.ipynb` (Optimización de la relevancia con Cross-Encoders)
+4. `notebook/08_Introduccion_Agentes.ipynb` (Primeros pasos con lógica agéntica)
+5. `notebook/11_RAG_Avanzado_Agentico.ipynb` (Sistema final completo con memoria y herramientas)
 
-## 2. Demo mínima (Ejecución en 1 celda)
-Para comprobar que todo el entorno, las librerías y los Transformers funcionan de principio a fin (End-to-End) sin necesidad de configurar APIs externas, abre el notebook `notebook/02_Embeddings_Transformers.ipynb` y ejecuta la celda con el siguiente código de prueba:
+---
 
+## 2. Cómo Lanzar la Demo Final (Pasos Concretos)
+Para verificar que todo el ecosistema de IA y Agentes funciona de principio a fin, ejecute la demo rápida integrada:
+
+1. Asegúrese de tener el entorno virtual activo y las dependencias instaladas (`pip install -r requirements.txt`).
+2. Abra el notebook de la demo final: `notebook/11_RAG_Avanzado_Agentico.ipynb`.
+3. Ejecute la celda principal del agente de prueba con el siguiente código básico:
 ```python
+# Demo simplificada End-to-End
 from sentence_transformers import SentenceTransformer, util
 
-# 1. Cargar modelo ligero de HuggingFace
 model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
-
-# 2. Definir textos de prueba y una consulta
-sentences = ["El análisis de negocio usa IA", "Me gusta el fútbol", "Los LLMs son potentes"]
-query_embedding = model.encode("¿Qué tecnologías se usan en analítica?")
+sentences = ["El análisis de negocio usa IA", "Los LLMs automatizan tareas", "RAG mejora las respuestas"]
+query = model.encode("¿Qué ventajas tiene el análisis de negocio moderno?")
 embeddings = model.encode(sentences)
 
-# 3. Calcular similitud semántica
-cos_scores = util.cos_sim(query_embedding, embeddings)[0]
-print(f"Resultado más cercano: {sentences[cos_scores.argmax()]}")
+cos_scores = util.cos_sim(query, embeddings)[0]
+print(f"Resultado de la Demo Semántica: {sentences[cos_scores.argmax()]}")
