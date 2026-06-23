@@ -24,6 +24,10 @@ En la carpeta notebook:
 - 05_Vectorstores_Retrieval 
 - 06_Introduccion_RAG
 - 07_Reranking_Optimizacion
+- 08_Introduccion_Agentes
+- 09_Agentes_LangChain
+- 10_LangGraph_Flujos
+- 11_RAG_Avanzado_Agentico
 
 En la carpeta /exercises:
-Ejecutar los ejercicios correspondientes en el mismo orden que los notebooks orden hasta el de Reranking incluido.
+Ejecutar los ejercicios correspondientes en el mismo orden que los notebooks orden hasta el de RAG Avanzado incluido.
