@@ -1,0 +1,42 @@
+=== RESUMEN DE: 00_Frameworks_Pytorch_vs_Tensorflow.html ===
+A continuación, una selección de sus respuestas para curiosos y lectores de la revista BBC Future. Estas son las últimas palabras que escribo en este artículo.
+
+=== RESUMEN DE: 00_Introduccion_NLP_casos_de_uso.html ===
+En esta nueva serie, los usuarios de BBC Mundo te ayudan a practicar el lenguaje natural con HuggingFace. A continuación, una selección de sus respuestas para curiosos.
+
+=== RESUMEN DE: 01_Introduccion_NLP_Embeddings_Basicos.html ===
+En esta nueva serie de ejercicios, los alumnos de la Universidad Autónoma de Madrid y otras universidades de Reino Unido pueden aprender qué son los embeddings.
+
+=== RESUMEN DE: 02_Embeddings_Transformers.html ===
+En esta nueva serie, los usuarios de BBC Mundo te ayudan a practicar el aprendizaje de las palabras enmascaradas de Transformers. A continuación, una selección de sus contenidos para curiosos.
+
+=== RESUMEN DE: 03_Ingenieria_de_Prompts.html ===
+En esta nueva serie, los expertos en ingeniería de lenguaje y aplicaciones de inteligencia (IA) de la Universidad Autónoma de Río de Janeiro, en Inglaterra, pueden aprender algunos de los ejercicios más importantes de su carrera.
+
+=== RESUMEN DE: 04_Chatbots_Basicos.html ===
+En esta nueva serie, los usuarios de BBC Mundo te ayudan a practicar el aprendizaje de los chatbots. A continuación, una selección de sus contenidos para curiosos.
+
+=== RESUMEN DE: 05_Vectorstores_Retrieval.html ===
+A continuación, una selección de ejercicios y aplicaciones de inteligencia (LLMs) de la Universidad Autónoma de Edimburgo (MIT) .
+
+=== RESUMEN DE: 06_Introduccion_RAG.html ===
+En esta nueva serie de ejercicios, te ayudamos a practicar el aprendizaje de las técnicas de inteligencia artificial (RAG) y aprender qué es RAG.
+
+=== RESUMEN DE: 07_Reranking_Optimizacion.html ===
+En esta nueva serie, los programas de aprendizaje de la Universidad Autónoma de Edimburgo, en Reino Unido, te ayudan a practicar algunas de las estrategias más importantes de Inteligencia Artificial (IA).
+
+=== RESUMEN DE: 08_Introduccion_Agentes.html ===
+En esta nueva serie de ejercicios, los profesores de la Universidad Autónoma de Londres (LLMs) y aplicaciones de inteligencia artificial (IA) se encuentran en la sala de clases. A continuación, una selección de sus respuestas para curiosos.
+
+=== RESUMEN DE: 09_Agentes_LangChain.html ===
+En esta nueva serie, te presentamos algunos de los ejercicios más importantes de la serie: Agentes con Langchain y aplicaciones de inteligencia (IA)
+
+=== RESUMEN DE: 10_LangGraph_Flujos.html ===
+En esta nueva serie de ejercicios, te ayudamos a practicar algunos de los temas más importantes de la actualidad. A continuación, una selección de sus contenidos para curiosos.
+
+=== RESUMEN DE: 11_RAG_Avanzado_Agentico.html ===
+En esta nueva serie, los alumnos de la Universidad Autónoma de Buenos Aires, Argentina, podrán aprender a usar Agentic RAG y otros sistemas de inteligencia computacional. A continuación, una selección de sus respuestas para curiosos.
+
+=== RESUMEN DE: 12_Modelos_Contexto_Multimodales.html ===
+En esta nueva serie, los alumnos de la Universidad de Stanford, en Estados Unidos, podrán aprender a usar modelos de gran ventana de contexto (LCM) y de multimodales. A continuación, una selección de sus respuestas para curiosos.
+

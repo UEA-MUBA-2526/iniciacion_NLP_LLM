@@ -1,0 +1,52 @@
+--- RESUMEN DE: 00_Frameworks_Pytorch_vs_Tensorflow.html ---
+• En esta nueva serie, la revista BBC Focus resuelve algunas dudas de sus lectores. A continuación, una selección de nuestras respuestas a los grandes desafíos de la neurociencia.
+• El modelo de entrenamiento Tensorflow PyTorch es una de las más usadas en la actualidad. A continuación, una selección de modelos que pueden ayudar a entender cómo se ajustan los cambios de pesos tras un paso.
+
+--- RESUMEN DE: 00_Introduccion_NLP_casos_de_uso.html ---
+• En esta nueva serie, los alumnos de la Universidad de Stanford, en Estados Unidos, te ayudan a practicar el lenguaje natural con HuggingFace. A continuación, una selección de sus respuestas para curiosos y lectores.
+• 1. Análisis de sentimiento (NLB) y pipelines de aprendizaje automático ( algorithms based on learning patterns)
+• En esta nueva serie de documentos de la BBC te presentamos algunas de las partes más importantes de HuggingFace, la aplicación para navegar y usar.
+
+--- RESUMEN DE: 01_Introduccion_NLP_Embeddings_Basicos.html ---
+• En esta nueva serie de ejercicios, te ayudamos a aprender qué son los embeddings y cómo funcionan estos métodos. A continuación, una selección de sus contenidos para curiosos.
+• 1. One-Hot Encoding : ¿Cómo lograr un vocabulario de palabras a partir de contexto y de dimensionalidad?
+• En esta sesión de la BBC te presentamos algunas de las palabras más utilizadas en el lenguaje de los Transformers: Word2vec/GloVe.
+
+--- RESUMEN DE: 02_Embeddings_Transformers.html ---
+• En esta nueva serie de ejercicios y aplicaciones de Inteligencia Artificial (IA, por sus siglas en inglés) te presentamos un notebook que te permite aprender qué es el bert, el modelo contextual de la película Transformers.
+• Sentence Transformers es una librería construida sobre HuggingFace que genera un único vector por oración y párrafo. ¿Qué es el modelo? 1. Más precisión
+
+--- RESUMEN DE: 03_Ingenieria_de_Prompts.html ---
+• En esta nueva serie de ejercicios de ingeniería deprompts (prompt engineering, por sus siglas en inglés) te presentamos la primera parte de la serie. A continuación, una selección de sus contenidos para curiosos.
+• En esta nueva serie de ejercicios aprendemos algunas de las mejores técnicas para crear chatbotes usando few-shot.
+
+--- RESUMEN DE: 04_Chatbots_Basicos.html ---
+• En esta nueva serie de ejercicios de ingeniería y aplicaciones de inteligencia (LLMs, por sus siglas en inglés) te presentamos el código para la construcción de un chatbot básico con reglas simples, una solución para el problema de la memoria conversacional.
+
+--- RESUMEN DE: 05_Vectorstores_Retrieval.html ---
+• En esta nueva serie de ejercicios y aplicaciones de inteligencia (LLMs, por sus siglas en inglés) te presentamos el tema de la formación de los mejores profesores de computación (MAs) en Estados Unidos. A continuación, una selección de sus objetivos.
+• En esta nueva serie de índices de la Arquitectura típica de un sistema de retrieval (LLS) se pueden cargar en formato rápido y con éxito.
+
+--- RESUMEN DE: 06_Introduccion_RAG.html ---
+• En esta nueva serie de ejercicios, te ayudamos a aprender qué es RAG (Retrieval- Augmented Generation) y cuándo usarlo. A continuación, una selección de capítulos de la serie.
+
+--- RESUMEN DE: 07_Reranking_Optimizacion.html ---
+• En esta nueva serie de ejercicios de la Universidad Autónoma de Edimburgo, en Reino Unido, aprendemos algunos de los mejores métodos de reranking y aplicaciones de Inteligencia Artificial (IA).
+
+--- RESUMEN DE: 08_Introduccion_Agentes.html ---
+• En esta nueva serie de ejercicios, los profesores de la Universidad Autónoma de Londres (LLMs) y aplicaciones de inteligencia artificial (IA) se encuentran en el centro de los estudios. A continuación, una selección de sus contenidos para curiosos.
+• En esta serie, Lilian Weng explica cómo funcionan los agentes y sus herramientas. A continuación, una selección de algunas de las palabras más importantes de la serie: Agentes.
+
+--- RESUMEN DE: 09_Agentes_LangChain.html ---
+• En esta nueva serie de ejercicios de la Universidad Autónoma de Edimburgo, en Reino Unido, aprendemos cómo usar herramientas de búsqueda y aplicaciones de inteligencia artificial (IA).
+
+--- RESUMEN DE: 10_LangGraph_Flujos.html ---
+• En esta nueva serie de ejercicios de la Universidad Autónoma de Edimburgo, en Reino Unido, aprendemos a partir de este lunes cómo funcionan los gráficos de estados y los flujos de trabajo.
+
+--- RESUMEN DE: 11_RAG_Avanzado_Agentico.html ---
+• En esta nueva serie, los alumnos de la Universidad Autónoma de Buenos Aires, en Estados Unidos, podrán aprender a usar Agentic RAG como una herramienta de inteligencia artificial. A continuación, una selección de los ejercicios que te propusimos.
+
+--- RESUMEN DE: 12_Modelos_Contexto_Multimodales.html ---
+• En esta nueva serie, los profesores de la Universidad Autónoma de Edimburgo, en Reino Unido, se encuentran en el centro de una serie de aplicaciones de inteligencia (MAs, por sus siglas en inglés). A continuación, una selección de modelos de gran ventana de contexto (LCM) y multimodales (RAG) que
+• En esta nueva serie de cursos de ingeniería y aplicaciones de inteligencia (LLMs, por sus siglas en inglés) te presentamos el contenido del curso. A continuación, una selección de los temas que aprendemos sobre el curso:
+

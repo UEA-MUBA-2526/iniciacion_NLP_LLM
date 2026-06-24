@@ -1,0 +1,5 @@
+RESUMEN DE: ./notebook html/03_Ingenieria_de_Prompts.html
+
+Punto 1: ¿Qué es la ingeniería deprompts (prompt engineering) ? A continuación, una selección de ejercicios que te ayudarán a comprender cómo funcionan.
+
+Punto 2: En esta nueva serie, los modelos de la escuela secundaria (LLM) se enfrentan a un dilema matemático. A continuación, una selección de sus respuestas para el tema. In :

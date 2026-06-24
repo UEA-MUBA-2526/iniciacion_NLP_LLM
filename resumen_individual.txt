@@ -1,0 +1,4 @@
+--- RESUMEN DE: 01_Introduccion_NLP_Embeddings_Basicos.html ---
+• En esta nueva serie de ejercicios, te ayudamos a aprender qué son los embeddings y cómo funcionan estos métodos. A continuación, una selección de sus contenidos para curiosos.
+• 1. One-Hot Encoding : ¿Cómo lograr un vocabulario de palabras a partir de contexto y de dimensionalidad?
+• En esta sesión de la BBC te presentamos algunas de las palabras más utilizadas en el lenguaje de los Transformers: Word2vec/GloVe.
