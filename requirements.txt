@@ -12,6 +12,7 @@ langchain-core
 langchain-community
 langchain-groq
 langchain-huggingface
+langchain-text-splitters
 langgraph
 python-dotenv
 faiss-cpu
@@ -26,14 +27,19 @@ tiktoken
 ftfy
 regex
 tqdm
+openai-clip
 jupyter
 ipykernel
 ipywidgets
 notebook
 jupyterlab
+streamlit
 httpx
 requests
 aiohttp
 pyyaml
 session_info
 tensorflow
+torchvision
+certifi
+pip-system-certs

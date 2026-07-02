@@ -392,6 +392,21 @@ Las dependencias están definidas en `requirements.txt` (para pip) y `pyproject.
 
 Curso creado por Francisco Espiga Fernández
 
+## Ejecución, demo y Quality Gate
+
+Para ejecutar el bloque final del curso, lanzar la demo para stakeholders y registrar la validación manual, usa:
+
+- [`RUN.md`](RUN.md): orden recomendado de ejecución, pasos concretos para la demo, limitaciones conocidas y mini Quality Gate con 10 casos.
+- [`demo_stakeholder_rag.py`](demo_stakeholder_rag.py): demo Streamlit autocontenida de RAG con citas. Funciona sin API key en modo extractivo y usa Groq si se define `GROQ_API_KEY`.
+
+Lanzar la demo:
+
+```bash
+streamlit run demo_stakeholder_rag.py
+```
+
+Los notebooks desde RAG en adelante están en `notebook/06_Introduccion_RAG.ipynb` a `notebook/12_Modelos_Contexto_Multimodales.ipynb`. Los ejercicios resueltos correspondientes están en `exercises/EX_06_*.ipynb` a `exercises/EX_12_*.ipynb`.
+
 ## Licencia
 
 Material educativo para uso no comercial.
